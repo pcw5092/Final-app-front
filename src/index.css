@@ -5,6 +5,335 @@
   font-family: 'Sunflower', sans-serif;
 }
 
+/* Global styles */
 body {
-  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
 }
+
+
+
+.box {
+  background-color: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  height: auto;
+  width: auto;
+  min-height: 300px;
+  max-height: 60%;
+}
+
+/* styles */
+
+
+h1, h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+}
+
+button[type="submit"],
+button[type="button"],
+.btn {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  background-color: #1da1f2;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button[type="submit"]:disabled,
+button[type="button"]:disabled,
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.link-button {
+  text-align: center;
+}
+
+.link-button a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.link-button a:hover {
+  text-decoration: underline;
+}
+
+/* Index PAGE */
+.index-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.index-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.index-link:hover {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.message {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.error {
+  background-color: #ff4f4f;
+  color: #fff;
+}
+
+/* kakao page */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #000;
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ProfilePage */
+.profilePage {
+  margin-bottom: 20px;
+}
+
+.profilePage h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profilePage-form {
+  margin-top: 20px;
+}
+
+.profilePage-profileImage {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profilePage-profileImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profilePage-profileImage input[type="file"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profilePage-text input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.profilePage-button button {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profilePage-button button:hover {
+  background-color: #0c84c7;
+}
+
+/* Home Page */
+.home-box {
+  background-color: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  height: auto;
+  width: auto;
+  min-height: 400px;
+}
+
+.settings-h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #14171a;
+}
+
+.settings-deactivate,
+.deactivate-profile {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.settings-deactivate a,
+.deactivate-profile a {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #1da1f2;
+  color: #ffffff;
+  border-radius: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.settings-deactivate a:hover,
+.deactivate-profile a:hover {
+  background-color: #0c86d1;
+}
+
+.deactivate-profile a {
+  background-color: #ffad1f;
+}
+
+.deactivate-profile a:hover {
+  background-color: #ff8e00;
+}
+
+/* index.css */
+
+/* Custom styles for the NavBar */
+.navbar {
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Custom styles for the home-box */
+.home-box {
+  margin-top: 80px;
+}
+
+/* Custom styles for the card */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.card-header .profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.card-header .writer-name {
+  font-weight: bold;
+}
+
+.card-header .writer-email {
+  color: #777;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.description {
+  margin-bottom: 12px;
+}
+
+.attachments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.attachment-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+/* Additional custom styles for other elements if needed */
