@@ -1,1 +1,1 @@
-export const REST_SERVER_ADDRESS = "http://192.168.4.123:8080";
+export const REST_SERVER_ADDRESS = "http://13.124.254.38:8090";
